@@ -1,0 +1,353 @@
+* {
+  box-sizing: border-box;
+}
+:root {
+  --yellow-btn: #ffb900;
+}
+a {
+  text-decoration: none;
+}
+html {
+  font-size: 62.5%;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  font-size: 1.6rem;
+}
+/* =================Common=================== */
+.frame {
+  border: 1px orange solid;
+}
+.btn {
+  display: inline-block;
+  min-width: 118px;
+  height: 50px;
+  padding: 0 16px;
+  color: #fff;
+  font-size: 1.6rem;
+  text-align: center;
+  font-weight: 600;
+  line-height: 5rem;
+  border-radius: 24.5px;
+  background: #171100;
+}
+.main-content {
+  position: relative;
+  width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: calc(100% - 48px);
+}
+
+/* =================HEADER=================== */
+.nav ul {
+  display: flex;
+}
+.header {
+  z-index: 9999;
+  padding-top: 36px;
+  background: #fffcf4;
+}
+
+.header.fixed {
+  position: sticky;
+  top: -36px;
+}
+
+.nav {
+  margin-left: auto;
+}
+.nav a {
+  position: relative;
+  color: #5f5b53;
+  font-size: 1.6rem;
+
+  line-height: 2.8rem;
+}
+.nav li {
+  padding: 11px 21px;
+}
+.nav a:hover,
+.nav li.active a {
+  /* font-weight: 600; */
+  text-shadow: 1px 0 0 currentColor;
+  color: #171100;
+}
+.nav li.active a::after {
+  position: absolute;
+  content: "";
+  display: block;
+  bottom: -2px;
+  width: 12px;
+  height: 2px;
+  background-color: #171100;
+  border-radius: 1px;
+}
+.header .body {
+  display: flex;
+  align-items: center;
+}
+.header .sign-up-btn {
+  margin-left: 49px;
+  min-width: 144px;
+}
+.header .body .logo {
+  padding-left: 2px;
+}
+/* =================HERO=================== */
+
+/* =================Image=================== */
+
+.hero {
+  height: 900px;
+  background-color: #fffcf4;
+}
+.hero .container {
+  padding-top: 65px;
+  display: flex;
+}
+.main-content .image {
+  position: relative;
+  width: 570px;
+  height: 685px;
+}
+
+.hero .image-hero {
+  width: 470px;
+  height: 685px;
+  border-radius: 20px;
+}
+.hero .card {
+  position: absolute;
+  background-color: #fff;
+
+  top: 393px;
+  left: 300px;
+  width: 270px;
+  height: 244px;
+  border-radius: 12px;
+}
+.hero .card ul {
+  margin: 24px 0 24px 24px;
+}
+.hero .card .logo {
+  width: 48px;
+  height: 48px;
+}
+.hero .card .image-text {
+  margin-left: 16px;
+  width: 183px;
+  height: 56px;
+}
+.hero .card .image-text p {
+  weight: 400;
+  size: 14px;
+  line-height: 26px;
+  color: #5f5b53;
+}
+.hero .card .image-text h2 {
+  color: #171100;
+  font-size: 18px;
+  font-weight: 600;
+}
+.hero .card ul li {
+  display: flex;
+  width: 100%;
+  height: 56px;
+}
+.hero .card ul li:nth-child(n + 2) {
+  margin-top: 14px;
+}
+.hero .card .image-text {
+}
+.hero .main-content .text {
+  margin: 128px 0px 128px 130px;
+  width: 470px;
+  height: 558px;
+}
+/* =================Image=================== */
+/* =================Text=================== */
+.hero .container .text {
+  margin-top: 70px;
+}
+.hero .container h1 {
+  margin-bottom: 22px;
+  color: #171100;
+  font-size: 5.8rem;
+  font-family: Sen;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 6.8rem;
+  letter-spacing: -1.16px;
+}
+.hero .container .text p {
+  color: #5f5b53;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 3rem;
+  margin-bottom: 38px;
+}
+.hero .container .container-btn {
+  position: relative;
+}
+.hero .container .container-btn .btn-see {
+  position: relative;
+  width: 148px;
+
+  top: -41px;
+  background-color: var(--yellow-btn);
+}
+.hero .container .text .sub-btn {
+  display: inline-block;
+  margin-left: 16px;
+}
+.hero .container .text .sub-btn a {
+  position: relative;
+  top: -38px;
+  color: #171100;
+  font-size: 1.8rem;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 3rem;
+}
+
+.intro .title {
+  color: #5f5b53;
+  font-size: 1.8rem;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 3rem;
+}
+.intro .sub-intro {
+  display: inline-block;
+  position: relative;
+  top: -18px;
+  width: 173px;
+  height: 54px;
+}
+.intro .sub-intro p {
+  color: #171100;
+  font-size: 44px;
+  font-family: Sen;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 54px;
+  display: inline-block;
+}
+.intro .sub-intro p:first-child {
+  font-size: 44px;
+  color: #171100;
+}
+/* =================Text=================== */
+
+/* =================courses=================== */
+.courses {
+  margin-top: 200px;
+  width: 100%;
+  height: 645px;
+}
+.courses .main-content {
+  height: 900px;
+}
+.courses .main-content .text {
+  display: inline-block;
+  margin-right: 602px;
+  width: 458px;
+  height: 124px;
+}
+.courses .text h2 {
+  color: #171100;
+  font-size: 3.8rem;
+  font-family: Sen;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 4.8rem;
+  letter-spacing: -0.76px;
+}
+.courses .text p {
+  margin-top: 16px;
+  color: #5f5b53;
+  font-size: 1.8rem;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 3rem;
+}
+
+.courses .group-btn {
+  display: inline-block;
+  position: relative;
+  top: -34px;
+  width: 104px;
+  height: 40px;
+}
+.courses .group-btn .l-btn {
+  margin-right: 18px;
+}
+.courses .courses-list ul {
+  display: flex;
+}
+
+.courses .courses-list .item {
+  margin-top: 55px;
+  width: 370px;
+  height: 466px;
+}
+.courses .courses-list .item:nth-child(n + 2) {
+  margin-left: 30px;
+}
+.courses .item .body {
+  margin: 22px;
+  width: 326px;
+  height: 150px;
+}
+.courses .item .body h3 {
+  display: inline-block;
+  color: #171100;
+  font-size: 18px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 30px;
+}
+.courses .item .body .group-star {
+  display: inline-block;
+  margin-left: 111px;
+}
+
+.courses .item .body .content-courses {
+  margin-top: 6px;
+  margin-bottom: 4px;
+  color: #5f5b53;
+  font-size: 14px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+.courses .item .body .price {
+  display: inline-block;
+  color: #171100;
+  font-size: 18px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 30px;
+}
+.courses .item .body .book-btn {
+  display: inline-block;
+
+  margin-left: 131px;
+}
+.courses .item .body .book-btn .btn {
+  background-color: var(--yellow-btn);
+}
+.courses .item .body .price {
+  position: relative;
+  top: 2px;
+}
